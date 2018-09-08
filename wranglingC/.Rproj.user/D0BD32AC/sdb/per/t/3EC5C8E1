@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "barchart <- function(input,output,col1,col2,wid,hei,wid2) {\n  library(ggplot2)\n  data_1 <- read.csv(input)\n  #X = data_1[[col1]]\n  #Y = data_1[[col2]]\n  p <- ggplot(data_1,aes(x=get(col1),y=get(col2),group = 1))+ geom_bar(stat = \"identity\" , width = wid2)\n  p <- p + xlab(col1)+ylab(col2)\n  ggsave(p,file=output,width = wid,height = hei)\n  #barchart(\"a.csv\",\"abdcef.pdf\",\"time\",\"sum\",10,2,0.5)\n}\n",
+    "created" : 1536319547731.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "403143147",
+    "id" : "3EC5C8E1",
+    "lastKnownWriteTime" : 1530717475,
+    "last_content_update" : 1530717475,
+    "path" : "~/wranglingC/R/barchart.R",
+    "project_path" : "R/barchart.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

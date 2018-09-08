@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "# Hello, world!\n#\n# This is an example function named 'hello'\n# which prints 'Hello, world!'.\n#\n# You can learn more about package authoring with RStudio at:\n#\n#   http://r-pkgs.had.co.nz/\n#\n# Some useful keyboard shortcuts for package authoring:\n#\n#   Build and Reload Package:  'Ctrl + Shift + B'\n#   Check Package:             'Ctrl + Shift + E'\n#   Test Package:              'Ctrl + Shift + T'\n\nfilter_is <- function(x,y,z,o) {\n  library(dplyr)\n  data_1 <- read.csv(x)\n  data_1 <- filter(data_1,data_1[[y]]==z)\n  write.csv(data_1,file=o)\n}\n",
+    "created" : 1529898299141.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3673230052",
+    "id" : "9286D65C",
+    "lastKnownWriteTime" : 1529269471,
+    "last_content_update" : 1529269471,
+    "path" : "~/wranglingA/R/hello.R",
+    "project_path" : "R/hello.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
